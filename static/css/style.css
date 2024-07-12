@@ -70,7 +70,7 @@ body{
     border-radius: 10px 10px 10px 10px;
     justify-content: space-evenly;
     align-items: center;
-    margin: 8px;
+    margin-top: 10px;
 }
 .listofclass{
     display: flex;
@@ -82,7 +82,7 @@ body{
     border-radius: 10px 10px 10px 10px;
     justify-content: space-between;
     align-items: center;
-    margin: 8px;
+    margin-top: 10px;
 }
 
 
@@ -99,4 +99,22 @@ body{
     display: flex;
     flex-direction: column;
 
+}
+.selectACourse img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 15px 15px 15px 15px;
+}
+.chooseteacher_left{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left:10px;
+    margin-right: 10px;    
+}
+
+.chooseteacher_left img{
+    border-radius: 15px 15px 15px 15px;
 }
