@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择老师课程</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="makeRegistPageContainer">
+        
+
+        <div class="selectACourse">
+            <img src="{{teacher_img}}" alt="" width="360px">
+        </div>
+        
+        <div class="listofclass">
+            {% for i in range(class_count) %}
+            <div class="item" onclick="window.location.href=`/chooseteacher/" >
+                <h3 style="color: white;margin-left: 20px;">{{class_info[i].class_name}}    {{class_info[i].class_time}} 余{{class_info[i].class_num}}</h3>
+                <img src="/static/src/point.png" alt="" height="30px" style="margin-right: 10px;">
+            </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <title>选择老师</title>
+</head>
+<body>
+    <div class="selectTeacherContainer">
+        {% for i in range(tid_count) %}
+        <script>
+            url = window.location.pathname;
+			url = url.substring(url.lastIndexOf('/') + 1, url.length);
+        </script>
+        <div class="selcetTeacheritem" onclick="window.location.href=url + '/{{teacher_info[i].tid}}'">
+            <div class="chooseteacher_left" style="margin: 20px;">
+                <img src="{{teacher_info[i].teacher_img_url}}" alt="" width="60px" >
+            </div>
+            <div class="chooseteacher_right">
+                <h4 style="color: white;">
+                    {{teacher_info[i].teacher}}
+                </h4>
+                <p style="color: white;">
+                    {{teacher_info[i].teacher_introduce}}
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

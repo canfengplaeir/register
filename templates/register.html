@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预约报名</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="makeRegistPageContainer">
+        <div class="selectACourse">
+            <img src="/static/src/selectACourse.png" alt="" width="360px">
+        </div>
+        <div class="listOfCourses">
+            {% for id in range(metaInformation_count) %}
+            <div class="item" onclick="window.location.href=`/register/chooseteacher/{{id+1}}`">
+                <h3 style="color: white;">{{metaInformation[id].course_name}}</h3>
+                <img src="/static/src/point.png" alt="" height="30px">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.keyFeatures{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    
+}
+.ribbon{
+    display: flex;
+    flex-direction: column;
+    background-color: #2f7fff;
+}
+.storeNavigation{
+    display: flex;
+    justify-content: space-around;
+}
+.storeNavigation img{
+    flex-basis: auto;
+    flex-grow: 0.1;
+}
+.storeNavigation h4{
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+body{
+    background-color: #c6dbfc;
+}
+
+.makeRegistPageContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.listOfCourses{
+    display: flex;
+    flex-direction: column;
+}
+.listOfCourses .item{
+    display: flex;
+    background-color:#2f7fff;
+    border-radius: 10px 10px 10px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 8px;
+}
+.listofclass{
+    display: flex;
+    flex-direction: column;
+}
+.listofclass .item{
+    display: flex;
+    background-color:#2f7fff;
+    border-radius: 10px 10px 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+}
+
+
+.selcetTeacheritem{
+    display: flex;
+    background-color: #2f7fff;
+    justify-content:start;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 10px;
+
+}
+.selectTeacherContainer{
+    display: flex;
+    flex-direction: column;
+
+}
